@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viktoria Koscinski, PhD | Assistant Professor</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for a clean, academic look */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light gray background */
+        }
+        .container {
+            max-width: 900px;
+        }
+        .profile-photo {
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm py-8 md:py-12">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+            <!-- Profile Photo -->
+            <div class="mb-6 md:mb-0">
+                <!-- Replace this URL with a link to your photo -->
+                <img src="https://placehold.co/150x150/e2e8f0/0f172a?text=Your+Photo" alt="Profile photo of [Your Name]"
+                     class="w-32 h-32 rounded-full ring-4 ring-slate-200 profile-photo">
+            </div>
+
+            <!-- Name and Title -->
+            <div class="text-center md:text-left md:flex-grow md:ml-8">
+                <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-1">Viktoria Koscinski, PhD</h1>
+                <p class="text-lg text-gray-600">Assistant Professor, Department of Computer Science</p>
+                <p class="text-lg text-gray-600">Colorado State University</p>
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="mt-6 md:mt-0">
+                <ul class="flex space-x-4 text-sm font-medium">
+                    <li><a href="#about" class="text-gray-600 hover:text-indigo-600 transition-colors">About</a></li>
+                    <li><a href="#research" class="text-gray-600 hover:text-indigo-600 transition-colors">Research</a></li>
+                    <li><a href="#publications" class="text-gray-600 hover:text-indigo-600 transition-colors">Publications</a></li>
+                    <li><a href="#contact" class="text-gray-600 hover:text-indigo-600 transition-colors">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Sections -->
+    <main class="container mx-auto px-4 py-12 md:py-16">
+
+        <!-- About Me Section -->
+        <section id="about" class="bg-white p-6 md:p-8 rounded-lg shadow-sm mb-8">
+            <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-4 border-b pb-2">About Me</h2>
+            <div class="text-gray-700 leading-relaxed space-y-4">
+                <p>I am an Assistant Professor in the Department of Computer Science at Colorado State University. My work focuses on bridging the gap between softare engineering and cybersecurity.</p>
+                <p>Prior to joining CSU, I completed my Ph.D. in Computing and Information Sciences at the Rochester Institute of Technology, where my dissertation explored <i>Identifying Underspecifications in Security Requirements Using a Formal Reasoning Approach</i>. I also hold MS and BS degrees in Computer and Information Science from SUNY Polytechnic Institute.</p>
+                <p>My goal is to mentor and educate the next generation of cybersecurity researchers and software engineers using an interdisciplinary approach. I am passionate about advancing the field of cybersecurity through the application of formal methods and rigorous engineering principles.</p>
+            </div>
+        </section>
+
+        <!-- Research Section -->
+        <section id="research" class="bg-white p-6 md:p-8 rounded-lg shadow-sm mb-8">
+            <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-4 border-b pb-2">Research</h2>
+            <div class="text-gray-700 leading-relaxed space-y-4">
+                <p>My research focuses on applying natural language processing and machine learning techniques to improve software security at the early development stages, particularly within requirements engineering. My work integrates formal methods with machine learning to support rigorous and scalable security analysis. I am also interested in the empirical evaluation of vulnerability management systems and their impact on risk-informed decision-making. Through this interdisciplinary work, I aim to reduce the gap between software engineering and cybersecurity by enabling more secure-by-design practices.</p>
+                <p>I am interested in working with motivated students to join my research. If you are interested, please feel free to contact me.</p>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="bg-white p-6 md:p-8 rounded-lg shadow-sm mb-8">
+            <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-4 border-b pb-2">Publications</h2>
+            <div class="text-gray-700 leading-relaxed space-y-4">
+                <p>For a complete list of my publications, please see my <a href="https://scholar.google.com/citations?user=9yMjN7AAAAAJ&hl=en&oi=ao" class="text-indigo-600 hover:underline">Google Scholar profile</a>.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-white p-6 md:p-8 rounded-lg shadow-sm">
+            <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-4 border-b pb-2">Contact</h2>
+            <div class="text-gray-700 leading-relaxed space-y-2">
+                <p><strong>Email:</strong> firstname.lastname@colostate.edu</p>
+                <p><strong>Office:</strong> Colorado State University Computer Science Building, room 354.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-gray-300 py-6 text-center text-sm">
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> [Your Name]. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
