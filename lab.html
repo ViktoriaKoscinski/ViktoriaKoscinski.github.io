@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Software Systems Lab (S³ Lab) | Viktoria Koscinski</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8fafc;
+    }
+  </style>
+</head>
+
+<body class="text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm py-8 md:py-10">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+      <div>
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-1">Secure Software Systems Lab (S³ Lab)</h1>
+        <p class="text-lg text-gray-600">Colorado State University | Department of Computer Science</p>
+      </div>
+      <nav class="mt-6 md:mt-0">
+        <ul class="flex space-x-4 text-sm font-medium">
+          <li><a href="index.html" class="text-gray-600 hover:text-indigo-600 transition-colors">← Back to Home</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-12 md:py-16">
+
+    <!-- About Section -->
+    <section id="about" class="bg-white p-6 md:p-8 rounded-lg shadow-sm mb-8">
+      <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-4 border-b pb-2">About the Lab</h2>
+      <div class="text-gray-700 leading-relaxed space-y-4">
+        <p>
+          The <strong>Secure Software Systems Lab (S³ Lab)</strong> conducts research at the intersection of software engineering and cybersecurity. 
+          Our work focuses on improving security across the software lifecycle — from early-stage design and requirements engineering 
+          to post-deployment vulnerability management.
+        </p>
+        <p>
+          We combine formal methods, machine learning, and empirical software analysis to:
+        </p>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Automate the detection and reasoning of security weaknesses in requirements and code,</li>
+          <li>Evaluate and improve vulnerability scoring and prioritization systems, and</li>
+          <li>Develop tools that make secure-by-design practices more practical and scalable.</li>
+        </ul>
+        <p>
+          Our goal is to advance both the science and practice of building secure, trustworthy software systems.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-white p-6 md:p-8 rounded-lg shadow-sm mb-8">
+      <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-4 border-b pb-2">Current Projects</h2>
+
+      <div class="space-y-8 text-gray-700 leading-relaxed">
+        <!-- Project 1 -->
+        <div>
+          <h3 class="text-xl md:text-2xl font-semibold text-indigo-700 mb-2">Data-Driven Vulnerability Management and Risk Prioritization</h3>
+          <p>
+            Our group investigates how organizations assess and prioritize software vulnerabilities in practice and how these processes can be improved 
+            through data-driven methods. We study the strengths and limitations of existing scoring systems and analyze how well these metrics align with 
+            each other and with real-world exploitation trends. Building on our recent empirical studies, we are developing metrics and models that combine 
+            statistical analysis and machine learning to provide more accurate, context-aware vulnerability prioritization. 
+            Students involved in this project can explore vulnerability datasets, perform correlation and predictive analyses, and contribute to the 
+            design of next-generation risk assessment tools that better support security decision-making.
+          </p>
+        </div>
+
+        <!-- Project 2 -->
+        <div>
+          <h3 class="text-xl md:text-2xl font-semibold text-indigo-700 mb-2">Detecting Security Weaknesses in Software Requirements and Early Design</h3>
+          <p>
+            This project focuses on improving software security at its foundation: the early requirements and design stages. 
+            We are building automated methods to detect and explain potential security weaknesses in natural-language requirements even before code is written. 
+            Our work integrates machine learning (ML) with formal reasoning to translate informal requirements into analyzable specifications and 
+            identify design-level flaws such as missing access controls or weak authentication mechanisms. 
+            Building on our published research in secure requirements engineering, this ongoing effort aims to create practical tools that help developers 
+            and analysts reason about security early in the software lifecycle. 
+            Students involved in this project can gain hands-on experience with formal modeling, ML, and empirical evaluation of AI-assisted security tools.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Join Section -->
+    <section id="join" class="bg-white p-6 md:p-8 rounded-lg shadow-sm">
+      <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-4 border-b pb-2">Join the Lab</h2>
+      <p class="text-gray-700 leading-relaxed">
+        The S³ Lab welcomes motivated students interested in the intersection of cybersecurity, software engineering, and AI. 
+        Whether you are interested in formal methods, empirical studies, or applied security research, there are opportunities 
+        to contribute to ongoing projects and develop new ideas. 
+        <br><br>
+        Interested students (undergraduate or graduate) should contact 
+        <a href="mailto:firstname.lastname@colostate.edu" class="text-indigo-600 hover:underline">Dr. Viktoria Koscinski</a> 
+        with a short introduction and a description of their research interests.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-300 py-6 text-center text-sm">
+    <p>&copy; <script>document.write(new Date().getFullYear())</script> Secure Software Systems Lab | Colorado State University</p>
+  </footer>
+
+</body>
+</html>
