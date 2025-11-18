@@ -152,9 +152,21 @@
     <!-- Footer Section -->
     <footer class="bg-gray-800 text-gray-300 py-6 text-center text-sm">
         <p>&copy; <script>document.write(new Date().getFullYear())</script> Viktoria Koscinski. All Rights Reserved.</p>
-        <!-- Last Updated Information -->
-        <p class="mt-1 text-gray-400">Last Updated: November 18, 2025</p>
+        <!-- Dynamic Last Updated Information -->
+        <p class="mt-1 text-gray-400">Last Updated: <span id="last-updated-date"></span></p>
     </footer>
 
+    <!-- JavaScript to automatically set the "Last Updated" date -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const dateElement = document.getElementById('last-updated-date');
+            if (dateElement) {
+                // Get the current date and format it nicely
+                const now = new Date();
+                const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                dateElement.textContent = now.toLocaleDateString(undefined, options);
+            }
+        });
+    </script>
 </body>
 </html>
