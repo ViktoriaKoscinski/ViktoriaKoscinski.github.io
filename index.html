@@ -28,7 +28,7 @@
         <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
             <!-- Profile Photo -->
             <div class="mb-6 md:mb-0">
-                <!-- Photo link -->
+                <!-- Headshot link preserved to headshot-square2.jpg -->
                 <img src="https://raw.githubusercontent.com/ViktoriaKoscinski/ViktoriaKoscinski.github.io/main/headshot-square2.jpg" alt="Professional headshot"
                     onerror="this.onerror=null;this.src='https://placehold.co/128x128/9CA3AF/ffffff?text=VK'"
                     class="w-32 h-32 rounded-full ring-4 ring-slate-200 profile-photo">
@@ -94,10 +94,7 @@
                 <h3 class="font-semibold text-lg text-gray-900">Current & Upcoming Semesters</h3>
                 <!-- Current Semester Course -->
                 <p class="mt-2">
-                    <strong>Spring 26:</strong> <a href="https://courses.cs.colostate.edu/cs556/" class="text-indigo-600 hover:underline">CS556: Computer Security</a>
-                </p>
-                <!-- New Upcoming Semester Course -->
-                <p>
+                    <strong>Fall 26:</strong> <a href="https://courses.cs.colostate.edu/cs456/" class="text-indigo-600 hover:underline">CS456: Modern Cybersecurity</a>
                 </p>
 
                 <h3 class="font-semibold text-lg text-gray-900 mt-6">Previous Courses Taught</h3>
@@ -111,6 +108,11 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <tr>
+                                <td class="border-b border-gray-200 px-4 py-2">Spring 26</td>
+                                <td class="border-b border-gray-200 px-4 py-2">CS556: Computer Security</td>
+                                <td class="border-b border-gray-200 px-4 py-2">Colorado State University</td>
+                            </tr>
                             <tr>
                                 <td class="border-b border-gray-200 px-4 py-2">Fall 25</td>
                                 <td class="border-b border-gray-200 px-4 py-2">CS580B6: Vulnerability Management and Analysis</td>
@@ -156,7 +158,22 @@
     <!-- Footer Section -->
     <footer class="bg-gray-800 text-gray-300 py-6 text-center text-sm">
         <p>&copy; <script>document.write(new Date().getFullYear())</script> Viktoria Koscinski. All Rights Reserved.</p>
+        <!-- Last Updated Information -->
+        <p class="mt-1 text-gray-400">Last Updated: <span id="last-updated-date"></span></p>
     </footer>
 
+    <!-- JavaScript to display the specified content update date -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const dateElement = document.getElementById('last-updated-date');
+            
+            // USER ACTION REQUIRED: Update this string manually whenever you push a new version to GitHub.
+            const LAST_UPDATED_DATE = 'November 24, 2025'; 
+
+            if (dateElement) {
+                dateElement.textContent = LAST_UPDATED_DATE;
+            }
+        });
+    </script>
 </body>
 </html>
